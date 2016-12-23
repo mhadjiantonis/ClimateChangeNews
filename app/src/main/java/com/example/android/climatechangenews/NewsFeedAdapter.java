@@ -16,6 +16,14 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.ViewHo
         this.mNewsItems = newsItems;
     }
 
+    public void clearList() {
+        mNewsItems.clear();
+    }
+
+    public void setNewsItems(ArrayList<NewsItem> newsItems) {
+        this.mNewsItems = newsItems;
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View newsItemCardView = LayoutInflater.from(parent.getContext())
